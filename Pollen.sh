@@ -19,7 +19,7 @@ echo "May Ultrablue rest in peace, o7."
 
 sleep 1
 
-mkdir -p /tmp/overlay/etc/opt/chrome/policies/managed
+mkdir -p /pollen/managed
 echo '{
   "URLBlocklist": [],
   "SystemFeaturesDisableList": [],
@@ -86,9 +86,7 @@ echo '{
   "NetworkPredictionOptions": "0",
   "AllowedDomainsForApps": "",
   "DeviceUserAllowlist": ""
-}' > /tmp/overlay/etc/opt/chrome/policies/managed/policy.json
-cp -a -L /etc/* /tmp/overlay/etc 2> /dev/null
-mount --bind /tmp/overlay/etc /etc
+}' > /pollen/managed/policy.json
 
 echo ""
 echo "Pollen has been successfully applied!"
